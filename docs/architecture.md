@@ -1,9 +1,11 @@
-# System Architecture - Real-Time Chat Application
+
+  # System Architecture - Real-Time Chat Application
 
 ## 1. High-Level Architecture
 
-This project follows a scalable real-time architecture using MERN stack with Socket.IO, Redis, BullMQ, and MongoDB.
+This project uses a scalable real-time architecture built with MERN stack, Socket.IO, Redis, BullMQ, and MongoDB.
 
+```txt
             ┌──────────────┐
             │   React App  │
             └──────┬───────┘
@@ -16,8 +18,10 @@ This project follows a scalable real-time architecture using MERN stack with Soc
                │      │
       REST APIs│      │Socket.IO
                │      ↓
-               │  Real-Time Engine
-               │
+        ┌─────────────────────┐
+        │ Real-Time Engine    │
+        └─────────────────────┘
+
                ↓
     ┌────────────────────────┐
     │      MongoDB           │
@@ -27,7 +31,7 @@ This project follows a scalable real-time architecture using MERN stack with Soc
                ↓
     ┌────────────────────────┐
     │        Redis           │
-    │  (Pub/Sub + Cache)     │
+    │ (Pub/Sub + Cache)     │
     └────────────────────────┘
 
                ↓
@@ -51,6 +55,7 @@ User → React App
 
 
 ---
+
 
 ## 3. Real-Time Messaging Flow (Socket.IO)
 
