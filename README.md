@@ -1,2 +1,16 @@
-# realtime-chat-app
-Scalable real-time chat application built with MERN, Socket.IO, Redis, BullMQ, Docker, and Rate Limiting.
+# Real-Time Chat Application
+
+A scalable real-time chat application built to learn and demonstrate:
+
+- MERN Stack
+- Socket.IO
+- Redis
+- Redis Pub/Sub
+- BullMQ
+- Rate Limiting
+- Caching
+- Docker
+
+## Status
+
+Project Planning Phase 🚀
